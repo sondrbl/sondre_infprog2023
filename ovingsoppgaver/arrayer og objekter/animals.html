@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dyr til engelsk</title>
+</head>
+<body>
+    <p id="utskrift"></p>
+    <script>
+        const dyr = ["Hund", "Katt", "Elg", "Rev", "Hjort", "Ulv", "Fisk", "Edderkopp", "Slange", "Fugl"]
+
+        const animals = ["Dog", "Cat", "Moose", "Fox", "Deer", "Wolf", "Fish", "Spider", "Snake", "Bird"]
+
+        const setning = `${dyr[1]} er et dyr. Det heter ${animals[1]} på engelsk. ${dyr[4]} er et dyr. Det heter ${animals[4]} på engelsk`
+
+        document.getElementById("utskrift").innerHTML = setning
+    </script>
+</body>
+</html>

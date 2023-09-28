@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 2 Parametere</title>
+</head>
+<body>
+    <p id="name"></p>
+    <p id="email"></p>
+    <p id="age"></p>
+
+    <script>
+        function myInfo(name, birthyear, email){
+            
+            document.getElementById("name").innerHTML = name
+            const age = 2023 - birthyear 
+            document.getElementById("age").innerHTML = age 
+            document.getElementById("email").innerHTML = `<a href="mailto:${email}">${email}</a>`
+        
+            
+
+        }
+
+            myInfo("Sondre", 2002, "sondrbl@hiof.no")
+
+    </script>
+
+</body>
+</html>
