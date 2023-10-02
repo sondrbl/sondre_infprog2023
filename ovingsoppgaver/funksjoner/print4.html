@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oppgave 4 Minikalkulator</title>
-    <style>.red {color : red}</style>
+    <style>
+        .red {color : red}
+    </style>
 </head>
 <body>
     
     <ul id="result"></ul>
+        
 
     <script>
         function calculator(num1 = 0, num2 = 0) {
+            //utregninger for +, -, /, *
             const sumAdd = num1 + num2
             const sumSub = num1 - num2 
             const sumDiv = num1 / num2
             const sumMul = num1 * num2   
                 
+            //skrive ut regnestykkene til listene #results
 
-            document.getElementById("result").innerHTML = `
-                <li ${sumAdd <0 ? ` class="red"` : null}>${num1} + ${num2} = ${sumAdd}</li>
+            document.getElementById("result").innerHTML = 
+                `<li ${sumAdd <0 ? ` class="red"` : null}>${num1} + ${num2} = ${sumAdd}</li>
                 <li ${sumSub <0 ? `class="red"` : null}>${num1} - ${num2} = ${sumSub}</li>
                 <li ${sumDiv <0 ? `class="red"` : null}>${num1} / ${num2} = ${sumSub}</li>
                 <li ${sumMul < 0 ? `class="red"` : null}>${num1} * ${num2} = ${sumMul}</li>`
