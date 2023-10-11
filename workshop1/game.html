@@ -26,7 +26,7 @@
         </section>
         <img src="icons/c3_logo.svg" alt="Code Concept Collector" />
         <nav>
-            <button id="notebookToggler"><img src="icons/notebook.svg" />Åpne kladdeboka <span class="shortcut">n</span></button>
+            <button onClick="toggleVisibility()" id="notebookToggler"><img src="icons/notebook.svg" />Åpne kladdeboka <span class="shortcut">n</span></button>
             <button id="infoToggler">Info / Hvordan spille <span class="shortcut">i</span></button>
         </nav>
     </header>
@@ -58,6 +58,7 @@
                         <td><span id="functions">1</span></td>
                     </tr>
                 </table>
+                
             </div>
         </section>
         <section id="info" class="hidden">
@@ -117,6 +118,13 @@
 
        //Kjør funksjon for utskrift
         updateStaticUI()
+
+        function toggleVisibility(elementid) {
+           console.log("toggleVisibility kjører")
+            document.getElementById("notebook").style.display = "none"
+            const list = element.classList
+            list.add("elementid")
+        }
 
     </script>
 </body>
